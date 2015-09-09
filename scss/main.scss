@@ -7,7 +7,7 @@ $font-header    :    'UniSansHeavyCaps-Regular';
 
 $min-sm         :   768px;
 $min-md         :   992px;
-$min-lg         :   1250px;
+$min-lg         :   1260px;
 
 
 
@@ -28,6 +28,8 @@ body {
 .page {
     width: 100%;
     margin: 0 auto;
+    overflow: hidden;
+    position: relative;
 
     @media (min-width: $min-md) {
         width: 970px;
@@ -35,8 +37,12 @@ body {
     }
 
     @media (min-width: $min-lg) {
-        width: 1250px;
+        width: 1240px;
     }
+}
+
+.container {
+    position: relative;
 }
 
 .header {
@@ -392,7 +398,7 @@ body {
 
             &:before {
                 top: -180px;
-                left: 0;
+                left: -15px;
                 width: 124px;
                 height: 211px;
                 content: " ";
@@ -402,7 +408,7 @@ body {
 
             &:after {
                 top: -60px;
-                right: 0;
+                right: -15px;
                 width: 83px;
                 height: 141px;
                 content: " ";
@@ -605,6 +611,12 @@ body {
 
 
     @media (min-width: $min-lg) {
+
+        .button-box {
+            right: 30px;
+            top: 0;
+            position: absolute;
+        }
 
         .faq {
             width: 970px;
@@ -1051,6 +1063,194 @@ body {
 }
 
 
+// --------- Block 09 --------
+
+.b10 {
+    z-index: 10;
+    height: 310px;
+    padding-top: 45px;
+    position: relative;
+    background: url("../img/b10_bg.png") top center no-repeat;
+
+    .block-title {
+        color: #0f5d84;
+        padding: 24px 0;
+        font-size: 34px;
+        line-height: 39px;
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: $font-header;
+        background: url("../img/b10_title.png") top center no-repeat;
+    }
+}
+
+
+// --------- Block 11 --------
+
+.b11 {
+    z-index: 5;
+    height: 431px;
+    padding-top: 40px;
+    position: relative;
+    padding-bottom: 40px;
+    background: url("../img/b11_bg.jpg") top center no-repeat;
+
+    .certification {
+
+        ul {
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            line-height: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        li {
+            outline: none;
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .certification-item {
+            width: 169px;
+            height: 235px;
+            display: block;
+            margin: 0 auto;
+            outline: none;
+            padding: 25px 18px 23px 16px;
+            background: url("../img/cert_bg.jpg")  0 0 no-repeat;
+        }
+
+        a {
+            outline: none;
+        }
+    }
+
+    @media (min-width: $min-md) {
+        margin-top: -70px;
+    }
+}
+
+
+// --------- Block 12 --------
+
+.b12 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: url("../img/b12_bg.jpg") 0 0 repeat-x;
+
+    h2{
+        margin-bottom: 25px;
+    }
+
+    .text {
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+
+    .partners {
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        line-height: 0;
+        list-style: none;
+        text-align: center;
+
+        li {
+            width: 120px;
+            height: 100px;
+            display: inline-block;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @media (min-width: $min-sm) {
+
+        .partners {
+
+            li {
+                width: 150px;
+                height: 110px;
+            }
+        }
+    }
+}
+
+
+// --------- Block 13 --------
+
+.b13 {
+    z-index: 20;
+    height: 270px;
+    padding-top: 25px;
+    position: relative;
+    background: url("../img/b13_bg.png") top center no-repeat;
+
+    .block-title {
+        color: #0f5d84;
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+
+        span {
+            color: #104c6a;
+            display: block;
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+
+    .col-left {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .col-right {
+        text-align: center;
+    }
+
+
+    @media (min-width: $min-sm) {
+        padding-top: 40px;
+
+        .block-title {
+            font-size: 38px;
+            line-height: 45px;
+        }
+
+        .col-left {
+            text-align: right;
+            margin-bottom: 0;
+        }
+
+        .col-right {
+            text-align: left;
+        }
+    }
+}
+
+
+// --------- Block 14 --------
+
+.b14 {
+    z-index: 5;
+    margin-top: -40px;
+    position: relative;
+
+    #map {
+        height: 520px;
+    }
+
+}
+
+
+
+
 
 .text-box {
     z-index: 20;
@@ -1150,6 +1350,17 @@ body {
     }
 }
 
+.btn-medium {
+    padding: 10px 20px;
+    @include border-radius(22px);
+
+
+    @media (min-width: $min-sm) {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+}
+
 .btn-large {
     width: 100%;
     font-size: 14px;
@@ -1159,6 +1370,23 @@ body {
 
     @media (min-width: $min-sm) {
         font-size: 20px;
+    }
+}
+
+.btn-pen {
+    position: relative;
+    padding-left: 50px;
+    @include box-shadow(0px 1px 1px 0px rgba(224, 224, 224, 1));
+
+    &:before {
+        top: 50%;
+        left: 15px;
+        width: 24px;
+        height: 24px;
+        content: " ";
+        margin-top: -12px;
+        position: absolute;
+        background: url("../img/icon-pen.png") 0 0 no-repeat;
     }
 }
 
@@ -1192,6 +1420,69 @@ body {
     }
 }
 
+
+/* ------- Popup -------- */
+
+.form-popup {
+    width: 290px;
+    background: #fff;
+    padding: 17px 30px 30px 30px;
+
+
+    .btn-close {
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        position: absolute;
+        background: #2196f3 url("../img/btn-close.png") 50% 50% no-repeat;
+
+        &:hover {
+            background-color: #10ace8;
+        }
+    }
+
+    .form-title {
+        color: #303030;
+        font-size: 24px;
+        line-height: 25px;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        height: 173px;
+    }
+
+    .form-done {
+        color: #000;
+        height: 148px;
+        font-size: 14px;
+        overflow: hidden;
+        line-height: 22px;
+        padding-top: 20px;
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        .close-link {
+            color: #2196f3;
+            font-size: 16px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+    }
+
+    @media (min-width: $min-sm) {
+        width: 670px;
+    }
+}
 
 
 
@@ -1256,4 +1547,10 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+
+
+.fancybox-overlay {
+    background: rgba(1, 138, 196, 0.75);
 }
