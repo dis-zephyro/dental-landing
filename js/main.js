@@ -115,24 +115,20 @@ function init(){
 
 
 
-$(document).ready(function() {
-// Указываем переменные
-    var accordion_head = $('.faq  li > .quest'),
-        accordion_body = $('.faq li > .answer');
 
-// Функция клика
-    accordion_head.on('click', function(event) {
-// Скрывает открытый раздел по повторному клику
-        event.preventDefault();
-        if ($(this).attr('class') == 'active'){
-            $(this).removeClass('active');
-            accordion_body.slideUp('normal');
-            return false;
-        }
-// Открывает следующий, скрывая открытый
-        if ($(this).attr('class') != 'active'){
-            $(this).next().stop(true,true).slideToggle('normal');
-            $(this).addClass('active');
-        }
-    });
+$('.quest').click(function (event) {
+    event.preventDefault();
+    var box = $(this).closest('.faq li');
+    var icon = box.find('div.quest');
+    var body = box.find('div.answer');
+    body.slideToggle(300);
+
+
+    // Toggle icon from up to down
+    icon.toggleClass('plus').toggleClass('minus');
+    box.toggleClass('').toggleClass('panel_collapse');
+    setTimeout(function () {
+        box.resize();
+        box.find('[id^=map-]').resize();
+    }, 50);
 });
