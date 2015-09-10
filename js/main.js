@@ -79,6 +79,66 @@ $('.certification ul').slick({
 });
 
 
+$('.partners').slick({
+    dots: false,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    infinite: true,
+    arrows: false,
+    slidesToShow: 8,
+    slidesToScroll: 2,
+    responsive: [
+        {
+            breakpoint: 1249,
+            settings: {
+                slidesToShow: 6,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+});
+
+
+$('.doctors').slick({
+    dots: false,
+    speed: 1000,
+    arrows: false,
+    autoplay: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+});
 
 // Подключние Яндекс-Карты
 
@@ -110,6 +170,8 @@ function init(){
     });
 
     myMap.behaviors.disable('scrollZoom');
+    myMap.behaviors.disable('drag');
+    myMap.behaviors.disable('multiTouch');
     myMap.geoObjects.add(myPlacemark);
 }
 

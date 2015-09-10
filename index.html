@@ -46,9 +46,8 @@
                         </div>
                         <div class="col-sm-3 col-md-3 col-lg-3 clearfix">
                             <ul class="address">
-                                <li>ул. Амурская, д. 44, к. 2</li>
+                                <li><a href="#map">ул. Амурская, д. 44, к. 2</a></li>
                                 <li><span class="metro">Щелковская</span></li>
-                                <li><a href="#map">Схема проезда</a></li>
                             </ul>
                         </div>
                     </div>
@@ -88,29 +87,44 @@
                         <button type="submit" class="btn btn-blue btn-large">Отправить заявку</button>
                     </form>
                     <div class="text-center">
-                        <a href="#order" class="btn-order">Записаться на приём</a>
+                        <a href="#order-form" class="btn-order btn-popup">Записаться на приём</a>
                     </div>
                 </div>
 
                 <div class="achievements">
                     <ul class="clearfix">
                         <li>
+                            <span class="achievements-icon">
+                                <img class="img-responsive" src="img/achievements.png" alt="">
+                            </span>
                             <span class="achievements-value">45850</span>
                             <span class="achievements-legend">довольных пациентов</span>
                         </li>
                         <li>
+                            <span class="achievements-icon">
+                                <img class="img-responsive" src="img/achievements.png" alt="">
+                            </span>
                             <span class="achievements-value">3083</span>
                             <span class="achievements-legend">внутриканальных титановых штифта</span>
                         </li>
                         <li>
+                            <span class="achievements-icon">
+                                <img class="img-responsive" src="img/achievements.png" alt="">
+                            </span>
                             <span class="achievements-value">19615</span>
                             <span class="achievements-legend">пломб светового отражения</span>
                         </li>
                         <li>
+                            <span class="achievements-icon">
+                                <img class="img-responsive" src="img/achievements.png" alt="">
+                            </span>
                             <span class="achievements-value">7879</span>
                             <span class="achievements-legend">металлокерамических коронок</span>
                         </li>
                         <li>
+                            <span class="achievements-icon">
+                                <img class="img-responsive" src="img/achievements.png" alt="">
+                            </span>
                             <span class="achievements-value">790</span>
                             <span class="achievements-legend">бюгельных протеза</span>
                         </li>
@@ -183,23 +197,23 @@
             <div class="container">
                 <h2>Фотогалерея</h2>
                 <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-3">
-                        <a class="img-gallery" href="images/gallery01.jpg">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <a rel="gallery" class="img-gallery" href="images/gallery01.jpg">
                             <img class="img-responsive" src="images/gallery01.jpg" alt="">
                         </a>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3">
-                        <a class="img-gallery" href="images/gallery02.jpg">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <a rel="gallery" class="img-gallery" href="images/gallery02.jpg">
                             <img class="img-responsive" src="images/gallery02.jpg" alt="">
                         </a>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3">
-                        <a class="img-gallery" href="images/gallery03.jpg">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <a rel="gallery" class="img-gallery" href="images/gallery03.jpg">
                             <img class="img-responsive" src="images/gallery03.jpg" alt="">
                         </a>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3">
-                        <a class="img-gallery" href="images/gallery04.jpg">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <a rel="gallery" class="img-gallery" href="images/gallery04.jpg">
                             <img class="img-responsive" src="images/gallery04.jpg" alt="">
                         </a>
                     </div>
@@ -406,29 +420,35 @@
             <div class="container">
                 <h2>Наши специалисты</h2>
 
-                <ul class="doctor clearfix">
-                    <li>
-                        <img class="img-responsive" src="images/doctor01.jpg" alt="">
-                        <div class="doctor-legend">
-                            <span class="doctor-name">Андрей Петрович<br/>Смирнов</span>
-                            <span class="doctor-office">стоматолог-терапевт</span>
+                <div class="doctors clearfix">
+                    <div class="doctor-item">
+                        <div class="doctor">
+                            <img class="img-responsive" src="images/doctor01.jpg" alt="">
+                            <div class="doctor-legend">
+                                <span class="doctor-name">Андрей Петрович<br/>Смирнов</span>
+                                <span class="doctor-office">стоматолог-терапевт</span>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <img class="img-responsive" src="images/doctor02.jpg" alt="">
-                        <div class="doctor-legend">
-                            <span class="doctor-name">Елена Петрова<br/>Смирнова</span>
-                            <span class="doctor-office">стоматолог-терапевт</span>
+                    </div>
+                    <div class="doctor-item">
+                        <div class="doctor">
+                            <img class="img-responsive" src="images/doctor02.jpg" alt="">
+                            <div class="doctor-legend">
+                                <span class="doctor-name">Елена Петрова<br/>Смирнова</span>
+                                <span class="doctor-office">стоматолог-терапевт</span>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <img class="img-responsive" src="images/doctor03.jpg" alt="">
-                        <div class="doctor-legend">
-                            <span class="doctor-name">Андрей Петрович<br/>Смирнов</span>
-                            <span class="doctor-office">стоматолог-терапевт</span>
+                    </div>
+                    <div class="doctor-item">
+                        <div class="doctor">
+                            <img class="img-responsive" src="images/doctor03.jpg" alt="">
+                            <div class="doctor-legend">
+                                <span class="doctor-name">Андрей Петрович<br/>Смирнов</span>
+                                <span class="doctor-office">стоматолог-терапевт</span>
+                            </div>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- End of Block -->
@@ -660,9 +680,8 @@
                         </div>
                         <div class="col-sm-3 col-md-3 col-lg-3 clearfix">
                             <ul class="address">
-                                <li>ул. Амурская, д. 44, к. 2</li>
+                                <li><a href="#map">ул. Амурская, д. 44, к. 2</a></li>
                                 <li><span class="metro">Щелковская</span></li>
-                                <li><a href="#map">Схема проезда</a></li>
                             </ul>
                         </div>
                     </div>
