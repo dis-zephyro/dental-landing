@@ -562,7 +562,10 @@ body {
       font-weight: 700;
       line-height: 17px;
       text-align: center;
+      overflow: hidden;
       display: inline-block; }
+      .b06 .fact li span {
+        display: block; }
     .b06 .fact .fact-img {
       width: 100px;
       height: 100px;
@@ -579,11 +582,11 @@ body {
   @media (min-width: 768px) {
     .b06 .fact li {
       width: 220px;
-      height: 240px;
+      height: 235px;
       padding: 0 20px;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 700;
-      line-height: 21px; }
+      line-height: 18px; }
     .b06 .fact .fact-img {
       width: 150px;
       height: 150px;
