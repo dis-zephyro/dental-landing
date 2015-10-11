@@ -152,8 +152,8 @@ body {
         max-width: 100%;
         margin: -10px 0 -10px -10px; }
       .contact .address {
-        float: right;
-        text-align: left;
+        margin-left: -15px;
+        text-align: right;
         padding-top: 10px; }
         .contact .address li {
           display: block; }
@@ -162,10 +162,14 @@ body {
   @media (min-width: 1260px) {
     .contact .logo {
       margin: -15px 0 -10px -10px; }
+    .contact .address {
+      float: right;
+      text-align: left; }
     .contact .phone {
       font-size: 32px;
       line-height: 32px;
-      text-align: center; } }
+      text-align: center;
+      margin-left: 0; } }
 
 .b01 {
   min-height: 800px;
