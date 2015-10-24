@@ -1,6 +1,6 @@
 (function($){
     $.fn.countdown_sg = function(dayend){
-        var countdownDate = "<li class='day'><span class='value countDaySG'>0</span><span class='timename countDayTimeNameSG'></span></li>";
+        var countdownDate = "<li class='day'><span class='value countDaySG'>0</span><span class='timename countDayTimeName'>дней</span></li>";
         var countdownHour = "<li class='hour'><span class='value countHourSG'>0</span><span class='timename countHourTimeNameSG'> час. </span></li>";
         var countdownMin = "<li class='min'><span class='value countMinSG'>0</span><span class='timename countMinTimeNameSG'> мин. </span></li>";
         var countdownSec = "<li class='sec'><span class='value countSecSG'>0</span><span class='timename countSecTimeNameSG'> сек. </span></li>";

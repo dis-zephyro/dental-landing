@@ -615,9 +615,10 @@ body {
             @include box-shadow(0px 1px 4px 0px rgba(215, 215, 215, 1));
 
             &.panel_collapse {
+                background: #f1f4f8;
 
-                .quest {
-                    color: #104c6a;
+                :before {
+
                 }
             }
         }
